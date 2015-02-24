@@ -15,8 +15,9 @@ class GebSpockTestAdapterExampleTest extends GebSpec {
      * More Natural Language support:
      * 1. "Plain text 'test' names"
      * 2. Implicit assertions. No need for 'assert' keyword
-     * 3. "Plain text given/when/then comments can be pulled out for "
+     * 3. Plain text given/when/then comments can be pulled out to build detailed test reports
      * 4. Powerful support for Data-Driven tests
+     * 5. Lots of other features supporting functional testing + unit testing.
      */
 
     def "PageObject example - using page elements"() {
@@ -30,7 +31,6 @@ class GebSpockTestAdapterExampleTest extends GebSpec {
         then:
         at YouTubePage
         searchField == "geb selenium webdriver groovy"
-        // assert searchField == "geb selenium webdriver groovy"
     }
 
     def "PageObject example - using 'domain' methods"() {
