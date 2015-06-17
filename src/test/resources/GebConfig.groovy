@@ -5,7 +5,7 @@ import org.openqa.selenium.remote.RemoteWebDriver
 
 // default is to use firefox
 driver = { new FirefoxDriver() }
-
+reportsDir = "target/geb-reports"
 
 // e.g. mvn clean test -Dgeb.env=win-ie
 /*

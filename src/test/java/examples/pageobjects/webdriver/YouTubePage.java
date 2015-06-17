@@ -26,5 +26,9 @@ public class YouTubePage {
     public WebElement getSearchField() {
         return searchField;
     }
+
+    public String getSearchFieldInput() {
+        return searchField.getAttribute("value");
+    }
 }
 

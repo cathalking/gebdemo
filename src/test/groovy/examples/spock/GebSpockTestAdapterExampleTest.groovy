@@ -6,10 +6,10 @@ import examples.pageobjects.geb.DuckDuckGoResultsPage
 import examples.pageobjects.geb.DuckDuckGoResultsPageV2
 import examples.pageobjects.geb.DuckDuckGoResultsPageV3
 import examples.pageobjects.geb.YouTubePage
-import geb.spock.GebSpec
+import geb.spock.GebReportingSpec
 import spock.lang.Unroll
 
-class GebSpockTestAdapterExampleTest extends GebSpec {
+class GebSpockTestAdapterExampleTest extends GebReportingSpec {
 
     /**
      * More Natural Language support:

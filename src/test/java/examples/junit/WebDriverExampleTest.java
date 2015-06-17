@@ -5,6 +5,7 @@ import examples.pageobjects.webdriver.DuckDuckGoResultsPage;
 import examples.pageobjects.webdriver.YouTubePage;
 import examples.pageobjects.webdriver.DuckDuckGoHomePage;
 import org.junit.After;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,7 @@ public class WebDriverExampleTest {
         driver.close();
     }
 
+    @Ignore // Show what test failure reporting looks like with JUnit's plain old assertions (as opposed to Groovy's "power asserts")
     @Test
     public void testDriveTheBrowser() {
         driver.get("http://www.wikipedia.org");
@@ -35,7 +37,7 @@ public class WebDriverExampleTest {
 
         YouTubePage youTubePage = PageFactory.initElements(driver, YouTubePage.class);
         assertTrue(youTubePage.at());
-        assertEquals(youTubePage.getSearchField(), "geb selenium webdriver groovy");
+        assertEquals(youTubePage.getSearchFieldInput(), "geb selenium webdriver groovy");
     }
 
     @Test

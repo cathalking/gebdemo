@@ -9,7 +9,7 @@ class DuckDuckGoResultsPageV2 extends Page {
 
     static content = {
         search { module DuckDuckSearchModule }
-        mavenTable(required: false) { $(".zci__content > table:nth-child(1) > tbody:nth-child(1)") }
+        mavenTable(required: false) { $(".c-base__content > table:nth-child(1) > tbody:nth-child(1)") }
     }
 
     Map mavenArtifacts() {

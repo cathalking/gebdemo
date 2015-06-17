@@ -48,7 +48,7 @@ public class DuckDuckGoResultsPage {
     }
 
     public Map<String, Map<String, String>> mavenArtifacts() {
-        List<WebElement> moduleDetailsElems = webDriver.findElements(By.cssSelector(".zci__content > table:nth-child(1) > tbody:nth-child(1) > tr:not(:first-child)"));
+        List<WebElement> moduleDetailsElems = webDriver.findElements(By.cssSelector(".c-base__content > table:nth-child(1) > tbody:nth-child(1) > tr:not(:first-child)"));
         Map<String, Map<String, String>> artifactsMap = new HashMap<>();
         for (WebElement tableRow : moduleDetailsElems) {
             List<String> rowVals = new ArrayList<>();
@@ -66,7 +66,7 @@ public class DuckDuckGoResultsPage {
     // Any Java 8 specific methods are shown below
 
     public Map<String, ModuleDetails> mavenArtifactsJava8Impl() {
-        List<WebElement> moduleDetailsElems = webDriver.findElements(By.cssSelector(".zci__content > table:nth-child(1) > tbody:nth-child(1) > tr:not(:first-child)"));
+        List<WebElement> moduleDetailsElems = webDriver.findElements(By.cssSelector(".c-base__content > table:nth-child(1) > tbody:nth-child(1) > tr:not(:first-child)"));
         return moduleDetailsElems.stream()
                 .map(tableRow -> {
                     List<String> rowVals =

@@ -4,10 +4,12 @@ import examples.pageobjects.geb.DuckDuckGoHomePage
 import examples.pageobjects.geb.YouTubePage
 import geb.Browser
 import geb.junit4.GebTest
+import org.junit.Ignore
 import org.junit.Test
 
 class GebJUnitTestAdapterExampleTest extends GebTest {
 
+    @Ignore // Show what test failure reporting looks like with Groovy's "power assert"
     @Test
     void testDriveTheBrowser() {
         Browser.drive {
